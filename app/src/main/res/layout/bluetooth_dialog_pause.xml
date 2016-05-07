@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024dp"
+    android:layout_height="768dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="318dp"
+        android:layout_height="512dp"
+        android:gravity="center"
+        android:background="@drawable/dialog_pause_bg"
+        android:paddingTop="120dp"
+        android:paddingBottom="50dp"
+        android:weightSum="100">
+
+        <ImageButton
+            android:layout_width="187dp"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:scaleType="fitCenter"
+            android:contentDescription="ResumeButton"
+            android:src="@drawable/dialog_pause_resume"
+            android:background="@android:color/transparent"
+            android:id="@+id/btnBluetoothDialogPauseResume" />
+
+        <ImageButton
+            android:layout_width="187dp"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:scaleType="fitCenter"
+            android:contentDescription="HomeButton"
+            android:src="@drawable/dialog_pause_home"
+            android:background="@android:color/transparent"
+            android:id="@+id/btnBluetoothDialogPauseHome" />
+
+    </LinearLayout>
+
+</RelativeLayout>

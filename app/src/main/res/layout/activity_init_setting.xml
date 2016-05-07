@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".SettingActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/init_setting_background"/>
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:id="@+id/initSetting_txt_name"
+        android:layout_marginStart="369dp"
+        android:layout_marginLeft="369dp"
+        android:layout_marginTop="300dp"
+        android:textSize="35sp"
+        android:textColor="#616161"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:ems="25" />
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:id="@+id/initSetting_view_male"
+        android:src="@drawable/selected_big"
+        android:layout_marginTop="398dp"
+        android:layout_marginLeft="369dp"
+        android:layout_marginStart="369dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/initSetting_btn_male"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="365dp"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="390dp"/>
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:id="@+id/initSetting_view_female"
+        android:src="@drawable/selected_big"
+        android:layout_marginTop="398dp"
+        android:layout_marginLeft="570dp"
+        android:layout_marginStart="570dp"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/initSetting_btn_female"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="565dp"
+        android:layout_marginStart="565dp"
+        android:layout_marginTop="388dp"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:id="@+id/initSetting_txt_age"
+        android:layout_marginStart="380dp"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="472dp"
+        android:textSize="35sp"
+        android:textColor="#616161"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:ems="2" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/initSetting_btn_upload"
+        android:layout_marginTop="560dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginLeft="280dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:id="@+id/initSetting_view_upload"
+        android:src="@drawable/selected_small"
+        android:layout_marginTop="572dp"
+        android:layout_marginLeft="306dp"
+        android:layout_marginStart="306dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/btn_finished"
+        android:layout_marginTop="599dp"
+        android:layout_marginLeft="860dp"
+        android:layout_marginStart="860dp"
+        android:clickable="true"
+        android:id="@+id/initSetting_btn_finish" />
+
+
+</RelativeLayout>

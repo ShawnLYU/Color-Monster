@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaterfallActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/container"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:id="@+id/banner"
+            android:layout_weight="8"
+            android:background="#a0000000">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/xiaozhi_profile"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/totalScore"
+                android:text="總積分: 0"
+                android:textSize="32sp"
+                android:textColor="#ffebebeb"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="50dp"
+                android:layout_marginEnd="50dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="92"
+            android:background="#c3d500"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:weightSum="100">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/boy_hand"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="-50dp"
+                    android:paddingTop="250dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:id="@+id/waterfallCanvas" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginTop="-30dp"
+                        android:src="@drawable/score_bar"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="75dp"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:id="@+id/roundScore"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="133dp"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:contentDescription="MonsterFront"
+                    android:src="@drawable/monster_front"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="60dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="WaterfallPlayAreaBackground"
+                    android:src="@drawable/waterfall_playarea_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginRight="200dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/score_banner"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="13dp"
+                        android:textSize="25sp"
+                        android:textColor="#ffffff"
+                        android:text="00:00"
+                        android:id="@+id/timerView"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center|top"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="100dp"
+                        android:textSize="25sp"
+                        android:textColor="#ffffff"
+                        android:text="顏色和字"
+                        android:id="@+id/currentTask"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="300dp"
+                        android:textSize="25sp"
+                        android:textColor="#ffffff"
+                        android:text="顏色"
+                        android:id="@+id/currentTask2"/>
+
+                </RelativeLayout>
+
+                <!--
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginRight="155dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/rounded_view"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textSize="25sp"
+                        android:textColor="#ffffff"
+                        android:text="剩餘時間 00:00"
+                        android:id="@+id/timerView"/>
+                </RelativeLayout>
+                -->
+
+            </RelativeLayout>
+
+            <!--
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="right|bottom"
+                android:weightSum="100"
+                android:id="@+id/waterfallPause">
+
+
+
+            </RelativeLayout>
+               -->
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

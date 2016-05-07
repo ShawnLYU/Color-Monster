@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Color Monster</string>
+    <string name="sumscore">總積分:  </string>
+</resources>

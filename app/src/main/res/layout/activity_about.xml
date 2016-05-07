@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/about_background"/>
+
+    <ImageButton
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:src="@drawable/btn_return"
+        android:id="@+id/about_btn_return"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="634dp"
+        android:layout_marginStart="854dp"
+        android:layout_marginLeft="854dp"/>
+
+
+</RelativeLayout>

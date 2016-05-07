@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".BattleActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="0.48"
+            android:background="@color/background"
+            android:id="@+id/battle_mode_upCanvas">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="自己"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    android:layout_weight="0.25"
+                    android:gravity="bottom|center"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_text_score11"
+                    android:text="0"
+                    android:textColor="#ee5b00"
+                    android:textSize="45sp"
+                    android:gravity="top|center"
+                    android:layout_weight="0.25"
+                    android:paddingTop="10pt"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="對方"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    android:layout_weight="0.15"
+                    android:gravity="bottom|center"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_text_score12"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    android:gravity="top|center"
+                    android:layout_weight="0.15"
+                    android:paddingTop="10pt"/>
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/battle_mode_btn_home"
+                    android:layout_gravity="center"
+                    android:src="@drawable/btn_home"
+                    android:scaleType="fitCenter"
+                    android:background="@color/background"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_table1"
+                    android:background="@drawable/table_drawable"
+                    android:stretchColumns="5"
+                    android:gravity="center"
+                    android:layout_marginTop="80dp">
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageButton
+                            android:id="@+id/battle_mode_upImgBtn00"
+                            android:layout_column="0"
+                            style="@style/battle_common_button_style"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn01"
+                            android:layout_column="1"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn02"
+                            android:layout_column="2"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn03"
+                            android:layout_column="3"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn04"
+                            android:layout_column="4"/>
+
+                    </TableRow>
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn10"
+                            android:layout_column="0"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn11"
+                            android:layout_column="1"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn12"
+                            android:layout_column="2"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn13"
+                            android:layout_column="3"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn14"
+                            android:layout_column="4"/>
+
+                    </TableRow>
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn20"
+                            android:layout_column="0"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn21"
+                            android:layout_column="1"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn22"
+                            android:layout_column="2"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn23"
+                            android:layout_column="3"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn24"
+                            android:layout_column="4"/>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn30"
+                            android:layout_column="0"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn31"
+                            android:layout_column="1"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn32"
+                            android:layout_column="2"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn33"
+                            android:layout_column="3"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn34"
+                            android:layout_column="4"/>
+                    </TableRow>
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn40"
+                            android:layout_column="0"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn41"
+                            android:layout_column="1"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn42"
+                            android:layout_column="2"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn43"
+                            android:layout_column="3"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_upImgBtn44"
+                            android:layout_column="4"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView1"
+                    android:src="@drawable/score_banner"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/battle_mode_time_remaining1"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/battle_mode_task_type1"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="140dp"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/battle_mode_task_content1"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="340dp"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_view_addOne1"
+                    android:src="@drawable/add_one"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="50dp"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_view_minusOne1"
+                    android:src="@drawable/minus_one"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="50dp"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_profile1"
+                    android:src="@drawable/monster_profile"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="105dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:weightSum="1"
+            android:layout_weight="0.05"
+            android:background="@color/black">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="0.48"
+            android:background="@color/background"
+            android:id="@+id/battle_mode_downCanvas">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="自己"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    android:layout_weight="0.25"
+                    android:gravity="bottom|center"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_text_score22"
+                    android:text="0"
+                    android:textColor="#ee5b00"
+                    android:textSize="45sp"
+                    android:gravity="top|center"
+                    android:layout_weight="0.25"
+                    android:paddingTop="10pt"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="對方"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    android:layout_weight="0.15"
+                    android:gravity="bottom|center"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_text_score21"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    android:gravity="top|center"
+                    android:layout_weight="0.15"
+                    android:paddingTop="10pt"/>
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/battle_mode_btn_start2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/btn_start"
+                    android:scaleType="fitCenter"
+                    android:background="@color/background"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:weightSum="1">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_table2"
+                    android:background="@drawable/table_drawable"
+                    android:stretchColumns="5"
+                    android:gravity="center"
+                    android:layout_marginTop="80dp">
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn00"
+                            android:layout_column="0"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn01"
+                            android:layout_column="1"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn02"
+                            android:layout_column="2"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn03"
+                            android:layout_column="3"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn04"
+                            android:layout_column="4"/>
+
+                    </TableRow>
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn10"
+                            android:layout_column="0"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn11"
+                            android:layout_column="1"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn12"
+                            android:layout_column="2"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn13"
+                            android:layout_column="3"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn14"
+                            android:layout_column="4"/>
+
+                    </TableRow>
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn20"
+                            android:layout_column="0"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn21"
+                            android:layout_column="1"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn22"
+                            android:layout_column="2"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn23"
+                            android:layout_column="3"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn24"
+                            android:layout_column="4"/>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn30"
+                            android:layout_column="0"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn31"
+                            android:layout_column="1"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn32"
+                            android:layout_column="2"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn33"
+                            android:layout_column="3"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn34"
+                            android:layout_column="4"/>
+                    </TableRow>
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn40"
+                            android:layout_column="0"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn41"
+                            android:layout_column="1"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn42"
+                            android:layout_column="2"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn43"
+                            android:layout_column="3"/>
+
+                        <ImageButton
+                            style="@style/battle_common_button_style"
+                            android:id="@+id/battle_mode_downImgBtn44"
+                            android:layout_column="4"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/score_banner"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/battle_mode_time_remaining2"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/battle_mode_task_type2"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="140dp"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/battle_mode_task_content2"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="340dp"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_view_addOne2"
+                    android:src="@drawable/add_one"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="50dp"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_view_minusOne2"
+                    android:src="@drawable/minus_one"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="50dp"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_mode_profile2"
+                    android:src="@drawable/xiaozhi_profile"
+                    android:layout_gravity="center|bottom"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="105dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

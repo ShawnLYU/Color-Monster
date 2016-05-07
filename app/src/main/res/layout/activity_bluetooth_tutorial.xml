@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".BluetoothActivity"
+    android:background="@drawable/bluetooth5"
+    android:id="@+id/ct_myRelativeLayout">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ct_tutorial"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="82dp"
+        android:layout_marginLeft="10dp"
+        android:text="聰明的小朋友們，想要和小夥伴們一起聯機對戰嗎？現在就讓我們和身邊的小夥伴一起開始玩吧"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:maxWidth="540dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/bluetooth_tutorial_btn_start"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="610dp"
+        android:layout_marginLeft="890dp"
+        android:src="@drawable/btn_start"
+        android:visibility="invisible"/>
+</RelativeLayout>

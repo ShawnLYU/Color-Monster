@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="0dp"
+    tools:context=".SingleTutorialActivity"
+    android:background="@drawable/dark_single"
+    android:id="@+id/st_myRelativeLayout">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/st_relativeLayout">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/xiaozhi_profile"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/st_imageView"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/st_totalscore"
+            android:text="@string/sumscore"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="189dp"
+            android:layout_marginEnd="189dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="0"
+            android:id="@+id/st_single_mode_total_score"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="726dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/st_relativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:id="@+id/st_imageView4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/route"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:src="@drawable/xiaozhi_profile"
+            android:id="@+id/st_single_mode_xiaozhi"
+            android:layout_marginLeft="125dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="350dp"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:src="@drawable/monster_profile"
+            android:id="@+id/st_single_mode_monster"
+            android:layout_marginLeft="125dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="500dp"
+            android:visibility="invisible"/>
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="110dp"
+            android:id="@+id/st_imageView3"
+            android:src="@drawable/score_bar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:id="@+id/st_single_mode_score"
+            android:text="0"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="875dp"
+            android:layout_marginStart="875dp"
+            android:visibility="invisible"/>
+
+
+
+
+        <!--
+            start of the game zone
+            -->
+
+        <TableLayout
+            android:layout_height="455dp"
+            android:layout_width="590dp"
+            android:layout_gravity="center"
+            android:id="@+id/st_canvas"
+            android:background="@drawable/table_drawable"
+            android:stretchColumns="5"
+            android:layout_marginRight="94dp"
+            android:layout_marginEnd="94dp"
+            android:layout_marginTop="145dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible">
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/st_imgBtn00"
+                    android:layout_column="0"
+                    style="@style/common_button_style"/>
+
+                <ImageButton
+                    android:id="@+id/st_imgBtn01"
+                    android:layout_column="1"
+                    style="@style/common_button_style"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn02"
+                    android:layout_column="2"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn03"
+                    android:layout_column="3"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn04"
+                    android:layout_column="4"/>
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn10"
+                    android:layout_column="0"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn11"
+                    android:layout_column="1"
+                    android:src="@drawable/unit00"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn12"
+                    android:layout_column="2"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn13"
+                    android:layout_column="3"
+                    android:src="@drawable/unit20"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn14"
+                    android:layout_column="4"/>
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn20"
+                    android:layout_column="0"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn21"
+                    android:layout_column="1"
+                    android:src="@drawable/unit00"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn22"
+                    android:layout_column="2"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn23"
+                    android:layout_column="3"
+                    android:src="@drawable/unit03"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn24"
+                    android:layout_column="4"/>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn30"
+                    android:layout_column="0"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn31"
+                    android:layout_column="1"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn32"
+                    android:layout_column="2"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn33"
+                    android:layout_column="3"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn34"
+                    android:layout_column="4"/>
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn40"
+                    android:layout_column="0"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn41"
+                    android:layout_column="1"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn42"
+                    android:layout_column="2"
+                    android:src="@drawable/unit13"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn43"
+                    android:layout_column="3"
+                    android:src="@drawable/unit22"/>
+
+                <ImageButton
+                    style="@style/common_button_style"
+                    android:id="@+id/st_imgBtn44"
+                    android:layout_column="4"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/st_single_mode_btn_start"
+            android:scaleType="fitCenter"
+            android:layout_alignBottom="@+id/st_imageView4"
+            android:layout_alignRight="@+id/st_imageView3"
+            android:layout_alignEnd="@+id/st_imageView3"
+            android:src="@drawable/btn_start"/>
+
+
+
+        <!--
+        end of the game zone
+        -->
+        <ImageView
+            android:layout_width="480dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/st_imageView2"
+            android:src="@drawable/score_banner"
+            android:layout_marginTop="85dp"
+            android:layout_toLeftOf="@+id/st_single_mode_btn_start"
+            android:layout_toStartOf="@+id/st_single_mode_btn_start"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:id="@+id/st_single_mode_time_remaining"
+            android:text="69"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="103dp"
+            android:layout_marginLeft="395dp"
+            android:gravity="center"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/st_single_mode_task_type"
+            android:text="顏色和意思"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="103dp"
+            android:layout_marginLeft="540dp"
+            android:gravity="center"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/st_single_mode_task_content"
+            android:text="紅"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="103dp"
+            android:layout_marginLeft="770dp"
+            android:gravity="center"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="聰明的小朋友，點擊右下方“開始”按鈕單人模式來幫助小智奪回圖騰吧！"
+            android:id="@+id/st_text"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="540dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

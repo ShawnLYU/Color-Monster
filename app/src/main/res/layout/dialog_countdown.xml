@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024dp"
+    android:layout_height="768dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="300sp"
+        android:text="3"
+        android:textColor="#ffffff"
+        android:id="@+id/txtDialogCountdown"
+        android:gravity="center"/>
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cityuytic.colormonster">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TotemActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SingleModeActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".WaterfallModeActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".BattleModeActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".InitSettingActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".BluetoothActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".BluetoothTutorialActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".WaterfallTutorialActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".SingleTutorialActivity"
+            android:screenOrientation="sensorLandscape"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="768dp"
+    android:layout_height="1024dp">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/battle_dialog2"
+            android:id="@+id/battle_dialog_scoreboard"/>
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/battle_dialog_home1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dialog_scoreboard_home"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginStart="190dp"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/battle_dialog_replay1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dialog_scoreboard_replay"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="265dp"
+            android:layout_marginStart="265dp"
+            android:background="@android:color/transparent"/>
+
+        <!--<TextView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/battle_dialog_score1"
+            android:textSize="40sp"
+            android:textColor="#ee5b00"
+            android:gravity="center"
+            android:layout_marginLeft="280dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="220dp"
+            android:text="370"/>
+-->
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/battle_dialog_home2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dialog_scoreboard_home"
+            android:layout_marginTop="810dp"
+            android:layout_marginLeft="540dp"
+            android:layout_marginStart="540dp"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/battle_dialog_replay2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dialog_scoreboard_replay"
+            android:layout_marginTop="810dp"
+            android:layout_marginLeft="465dp"
+            android:layout_marginStart="465dp"
+            android:background="@android:color/transparent"/>
+
+        <!--<TextView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/battle_dialog_score2"
+            android:textSize="40sp"
+            android:textColor="#ee5b00"
+            android:gravity="center"
+            android:layout_marginLeft="340dp"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="760dp"
+            android:text="370"/>-->
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

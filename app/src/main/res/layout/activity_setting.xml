@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".SettingActivity">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/setting_background"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:id="@+id/setting_txt_name"
+        android:layout_marginStart="375dp"
+        android:layout_marginLeft="375dp"
+        android:layout_marginTop="220dp"
+        android:textSize="35sp"
+        android:textColor="#616161"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:ems="25" />
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:id="@+id/setting_view_male"
+        android:src="@drawable/setting_selected_big"
+        android:layout_marginTop="318dp"
+        android:layout_marginLeft="378dp"
+        android:layout_marginStart="378dp"
+        android:scaleType="fitCenter"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/setting_btn_male"
+        android:layout_marginLeft="370dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="300dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:id="@+id/setting_view_female"
+        android:src="@drawable/setting_selected_big"
+        android:layout_marginTop="318dp"
+        android:layout_marginLeft="570dp"
+        android:layout_marginStart="570dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/setting_btn_female"
+        android:layout_marginLeft="565dp"
+        android:layout_marginStart="565dp"
+        android:layout_marginTop="300dp"
+        android:background="@android:color/transparent"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:id="@+id/setting_txt_age"
+        android:layout_marginStart="380dp"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="410dp"
+        android:textSize="35sp"
+        android:textColor="#616161"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:ems="2" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/setting_btn_upload"
+        android:layout_marginTop="480dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginLeft="270dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/setting_view_upload"
+        android:src="@drawable/setting_selected_small"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="495dp"
+        android:layout_marginLeft="296dp"
+        android:layout_marginStart="296dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/setting_btn_reset"
+        android:layout_marginTop="580dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/setting_btn_about_us"
+        android:layout_marginTop="580dp"
+        android:layout_marginStart="580dp"
+        android:layout_marginLeft="580dp"
+        android:background="@android:color/transparent"/>
+
+   <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/btn_finished"
+        android:id="@+id/setting_btn_finish"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="860dp"
+        android:layout_marginStart="860dp"
+        android:clickable="true"/>
+
+</RelativeLayout>

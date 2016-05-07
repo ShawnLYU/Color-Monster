@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/menu_background"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/xiaozhi_profile"
+        android:layout_gravity="center|end"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:text="@string/sumscore"
+        android:gravity="center|end"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="850dp"
+        android:layout_marginStart="850dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/mainMenu_sumScore"
+        android:text="0"
+        android:textColor="@color/white"
+        android:gravity="center|start"
+        android:textSize="@dimen/font_size"
+        android:layout_marginLeft="950dp"
+        android:layout_marginStart="950dp"/>
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/mainMenu_singleMode"
+        android:src="@drawable/single_logo"
+        android:layout_marginLeft="137dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="283dp"
+        android:clickable="true"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="單人模式"
+        android:textColor="#f5a623"
+        android:textSize="35sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="520dp"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="雙人模式"
+        android:textColor="#ef5a00"
+        android:textSize="35sp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="520dp"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="瀑布模式"
+        android:textColor="#8b572a"
+        android:textSize="35sp"
+        android:layout_marginLeft="540dp"
+        android:layout_marginStart="540dp"
+        android:layout_marginTop="520dp"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="藍牙模式"
+        android:textColor="#40c4ff"
+        android:textSize="35sp"
+        android:layout_marginLeft="740dp"
+        android:layout_marginStart="740dp"
+        android:layout_marginTop="520dp"/>
+
+
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/mainMenu_battleMode"
+        android:src="@drawable/battle_logo"
+        android:layout_marginLeft="337dp"
+        android:layout_marginStart="337dp"
+        android:layout_marginTop="283dp"
+        android:clickable="true"/>
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="266dp"
+        android:id="@+id/mainMenu_waterMode"
+        android:src="@drawable/waterfall_logo"
+        android:layout_marginLeft="537dp"
+        android:layout_marginStart="537dp"
+        android:layout_marginTop="266dp"
+        android:clickable="true"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/mainMenu_bluetooth"
+        android:src="@drawable/bluetooth_logo"
+        android:layout_marginLeft="737dp"
+        android:layout_marginStart="737dp"
+        android:layout_marginTop="283dp"
+        android:clickable="true"/>
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:id="@+id/mainMenu_setting"
+        android:src="@drawable/btn_setting"
+        android:layout_marginLeft="870dp"
+        android:layout_marginStart="870dp"
+        android:layout_marginTop="603dp"
+        android:clickable="true"/>
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:id="@+id/mainMenu_totem"
+        android:src="@drawable/btn_totem"
+        android:layout_marginLeft="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="603dp"
+        android:clickable="true"/>
+
+</RelativeLayout>
